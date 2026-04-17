@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temple Admin Dashboard</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!--<script>
+    // Check if user is logged in
+    if (window.netlifyIdentity) {
+      netlifyIdentity.on('init', user => {
+        if (!user) {
+          // Redirect to login if unauthenticated
+          window.location.href = 'login.html';
+        }
+      });
+    }
+  </script>
+  -->
+  <div class="sidebar">
+    <h2>Temple Admin</h2>
+    <div class="menu-item active" onclick="switchTab('trustees')">Trustees</div>
+    <div class="menu-item" onclick="switchTab('poojas')">Poojas</div>
+    <div class="menu-item" onclick="switchTab('ulsavam')">Ulsavam</div>
+    <div class="menu-item" onclick="switchTab('gallery')">Gallery Archives</div>
+    <div class="menu-item" onclick="switchTab('story')">Story / About</div>
+    <div class="menu-item" onclick="switchTab('contacts')">Contacts & Global</div>
+    
+    <div style="flex:1"></div>
+    <p style="font-size:0.8rem;color:#888;">Index.html maps strictly to data.js state.</p>
+    <a href="index.html" style="color:var(--gold);text-decoration:none;margin-bottom:1rem;display:block;">↗ View Website</a>
+  </div>
+  
+  <div class="main">
+    <div class="header-actions">
+      <h1 id="pageTitle" style="margin:0;">Trustees</h1>
+      <div>
+        <button onclick="saveLocal()">💾 Save Draft Locally</button>
+        <button class="btn-secondary" onclick="exportDataJS()" style="background:#2ecc71;">📥 Export Data To Live Site</button>
+      </div>
+    </div>
+    <div id="contentArea"></div>
+  </div>
+
+  <!-- Load default data -->
+  <script src="js/data.js"></script>
+  <!-- Admin panel logic -->
+  <script src="js/admin.js"></script>
+</body>
+</html>

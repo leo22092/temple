@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahavishnu Temple — Sacred Shrine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+Malayalam:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<nav>
+  <a href="#hero" class="nav-brand">🕉 Mahavishnu Temple</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#deities">Deities</a></li>
+    <li><a href="#poojas">Poojas</a></li>
+    <li><a href="#ulsavam">Ulsavam</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#trustees">Trustees</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="ulsavam-banner" id="ulsavamBanner">
+  <span class="dot"></span>
+  ULSAVAM IS LIVE
+  <span class="dot"></span>
+</div>
+
+<section id="hero" style="padding-top: 0; min-height: calc(100vh - 60px - 44px);">
+  <div class="hero-bg" id="heroBgImg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-om">🕉</div>
+  <p class="hero-subtitle">Est. 1992 · Archal, Kerala</p>
+  <h1 class="hero-title">Mahavishnu <span>Kshetram</span></h1>
+  <p class="hero-place">Mulackal Temple Trust</p>
+  <div class="hero-divider"></div>
+  <p class="hero-intro">
+    A sacred abode of Mahavishnu, where devotion flows across generations. 
+    Nestled in the Western Ghats, this temple has been a source of peace, 
+    grace, and divine blessings for over 180 years.
+  </p>
+  <div class="hero-ctas">
+    <a href="#poojas" class="btn-gold">View Poojas</a>
+    <a href="#ulsavam" class="btn-outline">Ulsavam Details</a>
+  </div>
+</section>
+
+<section id="deities" class="full-bleed bg-warm">
+<div class="section-inner">
+  <p class="section-label">Presiding Deities</p>
+  <h2 class="section-title">Sacred Murtis of the Temple</h2>
+  <div class="deities-grid fade-in" id="deitiesGrid"></div>
+</div>
+</section>
+
+<section id="about">
+  <p class="section-label">Our Story</p>
+  <h2 class="section-title">Temple History</h2>
+  <div class="about-content fade-in" id="storyContent"></div>
+</section>
+
+<section id="poojas" class="full-bleed bg-warm">
+<div class="section-inner">
+  <p class="section-label">Rituals & Worship</p>
+  <h2 class="section-title">Poojas & Homams</h2>
+  <div class="poojas-grid fade-in" id="poojasGrid"></div>
+</div>
+</section>
+
+<section id="ulsavam" class="full-bleed bg-dark" style="background: var(--deep);">
+<div class="section-inner">
+  <p class="section-label" style="color: var(--gold);">Annual Festival</p>
+  <h2 class="section-title light" id="ulsavamTitle"></h2>
+  <p id="ulsavamDateRange" style="text-align:center; color: var(--gold-pale); opacity:0.7; margin-bottom: 3rem; font-style: italic;"></p>
+  <div class="ulsavam-days fade-in" id="ulsavamGrid"></div>
+</div>
+</section>
+
+<section id="vidhana">
+  <p class="section-label">Ritual Procedure</p>
+  <h2 class="section-title">Vidhana Krama</h2>
+  <p style="text-align:center; color:var(--muted); font-style:italic; margin-bottom:2.5rem;">
+    Prescribed order of worship for Mahavishnu Pooja
+  </p>
+  <div class="ritual-steps fade-in" id="vidhanaGrid"></div>
+</section>
+
+<section id="gallery" class="full-bleed bg-warm">
+<div class="section-inner">
+  <p class="section-label">Photography</p>
+  <h2 class="section-title">Photo Gallery</h2>
+  <div class="gallery-albums" id="galleryTabs"></div>
+  <div class="gallery-grid fade-in" id="galleryGrid"></div>
+</div>
+</section>
+
+<section id="trustees">
+  <p class="section-label">Governing Body</p>
+  <h2 class="section-title">Temple Trustees</h2>
+  <div class="trustees-grid fade-in" id="trusteesGrid"></div>
+</section>
+
+<section id="contact" class="full-bleed bg-warm">
+<div class="section-inner">
+  <p class="section-label">Get in Touch</p>
+  <h2 class="section-title">Contact the Temple</h2>
+  <div class="contact-grid" id="contactGrid"></div>
+  <div class="social-links" id="socialLinks">
+    <a href="#" class="social-link">📘 Facebook</a>
+    <a href="#" class="social-link">📸 Instagram</a>
+    <a href="#" class="social-link">✉️ Email Us</a>
+    <a href="#" class="social-link">▶️ YouTube</a>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="footer-name">Mahavishnu Kshetram</div>
+  <div class="footer-sub" style="margin-top:4px;">Mulackal Temple Trust · Archal, Kerala</div>
+  <div class="footer-sub" style="margin-top:24px; font-size:11px; letter-spacing:1px;">
+    OM NAMO NARAYANAYA
+  </div>
+</footer>
+
+<a href="login.html" class="admin-link">Admin ↗</a>
+
+<div id="notificationModal" class="modal-overlay">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('notificationModal').classList.remove('active')">&times;</button>
+    <div class="modal-title" id="notifTitle"></div>
+    <div class="modal-body" id="notifBody"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
